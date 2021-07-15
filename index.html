@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bomb</title>
+    <link href="asset/css/bootstrap.css" rel="stylesheet" >
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+    <div class="container py-5">
+        <table id="table">
+
+        </table>
+        <h1 class="title">wellcome</h1>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <input type="number" class="form-control my-2" value="10" id="width" min="10" placeholder="width cells(min 10)">
+                    <input type="number" class="form-control my-2" value="10" id="height" min="10" placeholder="width cells(height 10)">
+                    <input type="number" class="form-control my-2" value="15" id="bombs" min="15" placeholder="bombs (min 15)">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary start">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="asset/js/script.js"></script>
+    <script>
+        let myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+            keyboard: false,
+            backdrop:"static"
+        })
+        myModal.show();
+
+
+        let start = document.getElementsByClassName("start")[0];
+        start.addEventListener("click",function () {
+            new Bomb(document.getElementById('table'),document.getElementsByClassName('title')[0],document.getElementById("width").value,document.getElementById("height").value,document.getElementById("bombs").value);
+            myModal.hide();
+        })
+        /*(function () {*/
+        //const b =
+        /*})();*/
+    </script>
+</body>
+</html>

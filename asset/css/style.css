@@ -1,0 +1,70 @@
+body {
+    background: #9b9b9b!important;
+}
+div.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+table {
+    box-sizing: content-box!important;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 1px;
+    border-color: #888888;
+    margin: auto;
+    background: #e9e9e9;
+}
+table td {
+    font-family: initial!important;
+    line-height: initial!important;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    border: 5px inset #ffffff;
+    width: 35px!important;
+    height: 35px!important;
+}
+table td:hover{
+    background: #e2e2e2;
+    border: 4px inset #ffffff;
+    padding: 1px;
+}
+table td.bomb-danger{
+    background: #d40d0e !important;
+}
+table td.empty{
+    border: 5px solid #e2e2e2!important;
+    background: #e2e2e2;
+}
+table td.empty.digit-1{
+    color: green;
+    font-size: 19px!important;
+    font-weight: 900!important;
+}
+table td.empty.digit-2{
+    color: blue;
+    font-size: 19px!important;
+    font-weight: 900!important;
+}
+table td.empty.digit-3{
+    color: #ff0000;
+    font-size: 19px!important;
+    font-weight: 900!important;
+}
+table td.empty.digit-4{
+    color: #88380f;
+    font-size: 19px!important;
+    font-weight: 900!important;
+}
+table td.empty.digit-5{
+    color: #6e8003;
+    font-size: 19px!important;
+    font-weight: 900!important;
+}
